@@ -68,7 +68,7 @@ set_target_properties(
 add_executable(imhash imhash.c)
 target_link_libraries(
         imhash
-        ${CMAKE_SOURCE_DIR}/libfastimagehash.so
+        ${CMAKE_CURRENT_BINARY_DIR}/libfastimagehash.so
 )
 target_compile_options(
         imhash
