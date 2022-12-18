@@ -79,8 +79,8 @@ target_compile_options(
 set_target_properties(fastimagehash PROPERTIES PUBLIC_HEADER "fastimagehash.h")
 INSTALL(
         TARGETS fastimagehash
-        LIBRARY DESTINATION /usr/lib/
-        PUBLIC_HEADER DESTINATION /usr/include/
+        LIBRARY DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/lib
+        PUBLIC_HEADER DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/include
 )
 
 add_dependencies(fastimagehash wavelib)
